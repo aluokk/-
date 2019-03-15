@@ -17,7 +17,7 @@ try:
     i=0
     for result in results:
         cur_cqssc_str = result['cqssc_str']
-        cur_cqssc_str.reverse()
+        cur_cqssc_str.reverse()  # 将列表翻转，因为抓取的数据是从后往前排列的
         i+=1
         print(i)
         for cur_number in cur_cqssc_str:
